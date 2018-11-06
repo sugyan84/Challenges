@@ -1,0 +1,4 @@
+Given two numbers:
+A B
+
+Find the A^B.
