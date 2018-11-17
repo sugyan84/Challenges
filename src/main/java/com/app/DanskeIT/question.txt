@@ -1,0 +1,36 @@
+You are given ID of different uni-directional highways in the ByteLand. The highways are quite mysterious.
+If you convert their IDs to a binary number then it means that the bit position where the value is ,
+those lanes are closed or else the lanes are open. Now for each highway,
+you need to count in how many ways the open lanes of the highway can be occupied.
+
+Note: If none of the lanes are occupied then also it is counted as a way.
+
+Input Format
+
+First line of the input contains an integer , the number of test cases.
+Next  lines contain an integer .
+
+Output Format
+
+Print  lines, i-th line contains the answer to the -th test case.
+
+Constraints
+
+
+Sample Input
+4
+2
+1
+4
+3
+
+Sample Output
+2
+2
+2
+4
+
+Explanation
+For the first test case , whose binary representation is ,
+the first lane is open and the second lane is closed.
+So either there is no car in any lane or there is a car in the 1st lane. Thus only two combinations are possible.
