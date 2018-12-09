@@ -1,4 +1,4 @@
-package com.app.lenskart;
+package com.app.challenges.lenskart;
 
 import java.util.Arrays;
 import java.util.HashMap;

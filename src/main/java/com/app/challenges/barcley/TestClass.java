@@ -1,4 +1,4 @@
-package com.app.barcley;
+package com.app.challenges.barcley;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

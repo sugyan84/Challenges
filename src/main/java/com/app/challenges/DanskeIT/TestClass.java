@@ -1,4 +1,4 @@
-package com.app.DanskeIT;
+package com.app.challenges.DanskeIT;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

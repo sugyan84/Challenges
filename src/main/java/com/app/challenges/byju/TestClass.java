@@ -1,4 +1,4 @@
-package com.app.byju;
+package com.app.challenges.byju;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package com.app.thoughtWorks;
+package com.app.challenges.thoughtWorks;
 
 import java.util.Arrays;
 import java.util.Scanner;

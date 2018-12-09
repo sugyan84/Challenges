@@ -1,4 +1,4 @@
-package com.app.rubique.knight;
+package com.app.challenges.rubique.knight;
 
 public class Square {
 

@@ -1,4 +1,4 @@
-package com.app.cars24;
+package com.app.challenges.cars24;
 
 import java.util.Scanner;
 

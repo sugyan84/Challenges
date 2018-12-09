@@ -1,4 +1,4 @@
-package com.app.rubique.cibilScore;
+package com.app.challenges.rubique.cibilScore;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

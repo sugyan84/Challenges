@@ -1,4 +1,4 @@
-package com.app.apostek;
+package com.app.challenges.apostek;
 
 import java.util.Scanner;
 

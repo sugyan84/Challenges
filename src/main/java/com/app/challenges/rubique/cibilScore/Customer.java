@@ -1,4 +1,4 @@
-package com.app.rubique.cibilScore;
+package com.app.challenges.rubique.cibilScore;
 
 public class Customer implements Comparable {
 
