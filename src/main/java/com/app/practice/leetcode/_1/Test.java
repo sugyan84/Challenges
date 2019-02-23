@@ -1,4 +1,4 @@
-package com.app.practice.leetcode;
+package com.app.practice.leetcode._1;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
