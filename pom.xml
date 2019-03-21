@@ -16,6 +16,7 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <estimate-wait-time-spec-version>1.1-SNAPSHOT</estimate-wait-time-spec-version>
     </properties>
 
     <dependencies>
@@ -24,6 +25,22 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.5.3</version>
+        </dependency>
+        <dependency>
+            <groupId>com.paypal.api.platform.csi.csdp</groupId>
+            <artifactId>estimate-wait-time-spec</artifactId>
+            <version>${estimate-wait-time-spec-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.paypal.api.platform.csi.csdp</groupId>
+            <artifactId>estimate-wait-time-spec</artifactId>
+            <version>1.1-SNAPSHOT</version>
+        </dependency>
+
 
     </dependencies>
 
