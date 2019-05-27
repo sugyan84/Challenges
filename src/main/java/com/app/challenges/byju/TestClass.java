@@ -10,7 +10,6 @@ class TestClass {
 
     public static void main(String args[]) throws Exception {
 
-
         //BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         Scanner s = new Scanner(System.in);
@@ -22,8 +21,6 @@ class TestClass {
         for (int i = 0; i < N; i++) {
             arr[i] = s.nextLong();
         }
-
-
 
         System.out.println(map);
 
@@ -73,9 +70,8 @@ class TestClass {
             if ((value + additionalVal) >= nextLong) {
                 System.out.println(i);
                 return;
-            } else
-            {
-                value= (value + additionalVal);
+            } else {
+                value = (value + additionalVal);
                 continue;
             }
 

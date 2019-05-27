@@ -4,6 +4,7 @@ import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Arrays;
 
 
 public class SparkOutPutParser {
@@ -20,10 +21,27 @@ public class SparkOutPutParser {
             String substring = getStringBetween(line.trim(), '{', '}');
             String[] split = substring.split("\\,");
 
+            Arrays.sort(split, (arr, arr1) -> {
+                int a = Integer.parseInt(arr.split("\\=")[0].trim());
+                int b = (Integer.parseInt(arr1.split("\\=")[0].trim()));
+                
+                if(a < b)
+                    return -1;
+                else if(a > b)
+                    return 1;
+                else return 0;
+            });
+
             for (int i = 0; i < split.length; i++) {
+                if(Integer.parseInt(split[i].split("\\=")[0].trim()) <= 15)
+                System.out.print(split[i].split("\\=")[1]+"\t\t\t\t");
+            }
+
+            System.out.println();
+            /*for (int i = 0; i < split.length; i++) {
                 System.out.print(split[i].split("\\=")[1]+"\t");
             }
-            System.out.println();
+            System.out.println();*/
         }
     }
     

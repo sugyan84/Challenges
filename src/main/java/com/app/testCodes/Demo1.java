@@ -3,14 +3,8 @@ package com.app.testCodes;
 public class Demo1 {
 
     public static void main(String[] args) {
-        Boolean b = null;
+        BaseBox baseBox = new ChildBox();
+        System.out.println(baseBox.getX());
 
-        System.out.println();
-        
-        if (b) {
-            System.out.println("true");
-        }else{
-            System.out.println("false");
-        }
     }
 }

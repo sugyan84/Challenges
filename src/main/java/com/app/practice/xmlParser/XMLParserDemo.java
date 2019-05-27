@@ -9,7 +9,6 @@ import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathFactory;
 import org.w3c.dom.Document;
 import org.w3c.dom.NodeList;
-import jdk.internal.org.xml.sax.InputSource;
 
 
 public class XMLParserDemo {
