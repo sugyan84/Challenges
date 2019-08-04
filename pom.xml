@@ -17,6 +17,8 @@
     <properties>
         <java.version>1.8</java.version>
         <estimate-wait-time-spec-version>1.1-SNAPSHOT</estimate-wait-time-spec-version>
+
+        <jolt-version>0.1.1</jolt-version>
     </properties>
 
     <dependencies>
@@ -30,16 +32,16 @@
             <artifactId>jackson-databind</artifactId>
             <version>2.5.3</version>
         </dependency>
-        <dependency>
+        <!--<dependency>
             <groupId>com.paypal.api.platform.csi.csdp</groupId>
             <artifactId>estimate-wait-time-spec</artifactId>
             <version>${estimate-wait-time-spec-version}</version>
-        </dependency>
-        <dependency>
+        </dependency>-->
+        <!--<dependency>
             <groupId>com.paypal.api.platform.csi.csdp</groupId>
             <artifactId>estimate-wait-time-spec</artifactId>
             <version>1.1-SNAPSHOT</version>
-        </dependency>
+        </dependency>-->
         <dependency>
             <groupId>com.jayway.jsonpath</groupId>
             <artifactId>json-path</artifactId>
@@ -61,7 +63,67 @@
             <artifactId>javatuples</artifactId>
             <version>1.1</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/javax.ws.rs/javax.ws.rs-api -->
+        <dependency>
+            <groupId>javax.ws.rs</groupId>
+            <artifactId>javax.ws.rs-api</artifactId>
+            <version>2.1.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.core</groupId>
+            <artifactId>jersey-client</artifactId>
+            <version>2.25.1</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-all</artifactId>
+            <version>1.10.19</version>
+            <scope>test</scope>
+        </dependency>
 
+        <dependency>
+            <groupId>com.jcraft</groupId>
+            <artifactId>jsch</artifactId>
+            <version>0.1.53</version>
+        </dependency>
+
+        <!--Jolt-->
+        <dependency>
+            <groupId>com.bazaarvoice.jolt</groupId>
+            <artifactId>jolt-core</artifactId>
+            <version>${jolt-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.bazaarvoice.jolt</groupId>
+            <artifactId>json-utils</artifactId>
+            <version>${jolt-version}</version>
+            <!--   <exclusions>
+                   <exclusion>
+                       <groupId>com.fasterxml.jackson.core</groupId>
+                       <artifactId>jackson-databind</artifactId>
+                   </exclusion>
+               </exclusions>-->
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.kohsuke/github-api -->
+        <!--<dependency>
+            <groupId>org.kohsuke</groupId>
+            <artifactId>github-api</artifactId>
+            <version>1.101</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>com.fasterxml.jackson.core</groupId>
+                    <artifactId>jackson-databind</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+-->
 
     </dependencies>
 

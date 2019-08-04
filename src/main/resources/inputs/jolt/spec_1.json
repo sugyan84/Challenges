@@ -1,0 +1,14 @@
+[
+    {
+	  "operation": "shift",
+	  "spec": {
+		"domainName": "domainName",
+		"price": "price",
+		"*": {
+		    "name": "name",
+		    "size": "size",
+		    "nickName": "nickName"
+		}
+	  }
+    }
+]

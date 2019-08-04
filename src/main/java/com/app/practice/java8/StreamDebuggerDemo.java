@@ -9,10 +9,10 @@ public class StreamDebuggerDemo {
 
     public static void main(String[] args) {
 
-        List<String> list = Arrays.asList("Hello Sugyan", "Hi Punit", "Namaste London", "Home are you", "Hi",
+        List<String> list = Arrays.asList(null, "Hello Sugyan", "Hi Punit", "Namaste London", "Home are you", "Hi",
                 "Welcome");
 
-        list.stream()
+        list.stream().filter(l -> l != null)
                 .flatMap(str -> Arrays.stream(str.split(" ")))
                 .collect(Collectors.toList());
     }
