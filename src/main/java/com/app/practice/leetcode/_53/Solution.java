@@ -1,9 +1,5 @@
 package com.app.practice.leetcode._53;
 
-import java.util.ArrayList;
-import java.util.List;
-
-
 /**
  * Given an integer array nums, find the contiguous subarray (containing at least one number)
  * which has the largest sum and return its sum.
@@ -15,33 +11,57 @@ import java.util.List;
 public class Solution {
 
     public static void main(String[] args) {
-        int[] num = { -2, 1, -3, 4, -1, 2, 1, -5, 4 };
+        int[] num = { 0, 2, 0, 2 };
         System.out.println(maxSubArray(num));
     }
 
     public static int maxSubArray(int[] nums) {
 
-        int j = 0;
-        int sum = 0;
-        List<Integer> list = new ArrayList<>();
+        int maxSum = Integer.MIN_VALUE;
+        int windowStart = 0;
 
-        for (int i = 0; i < nums.length; i++) {
-            //Add next
-            int next = sum + nums[i];
-            int prev = sum - nums[j];
+        if (nums != null) {
+            maxSum = nums[0];
+            int sumSoFar = nums[0];
 
-            if (next > prev || (next == prev)) {
-                list.add(nums[i]);
-                sum = sum + nums[i];
-            } else if (prev > next) {
-                if (list.size() > 0) {
-                    list.remove(0);
+            for (int i = 1; i < nums.length; i++) {
+                //Add new element.
+                int newElemSum = sumSoFar + nums[i];
+
+                //Remove first element from the window.
+                int remElemSum = sumSoFar + nums[i] - nums[windowStart];
+
+                //Consider only current element.
+                int currElemSum = nums[i];
+
+                //Find max of these three ways.
+                if (newElemSum > remElemSum) {
+                    if (newElemSum > currElemSum) {
+                        //newElem.
+                        sumSoFar = newElemSum;
+                    } else {
+                        //CurrElem.
+                        windowStart = i;
+                        sumSoFar = nums[i];
+                    }
+                } else if (remElemSum > newElemSum) {
+                    if (remElemSum > currElemSum) {
+                        //RemoveElem.
+                        windowStart++;
+                        sumSoFar = remElemSum;
+                    } else {
+                        //CurrElem.
+                        windowStart = i;
+                        sumSoFar = nums[i];
+                    }
                 }
-                sum = sum - nums[j];
-                j++;
+
+                if (sumSoFar > maxSum) {
+                    maxSum = sumSoFar;
+                }
             }
         }
-        System.out.println("list = " + list);
-        return sum;
+
+        return maxSum;
     }
 }

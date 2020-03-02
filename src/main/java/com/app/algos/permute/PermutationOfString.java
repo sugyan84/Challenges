@@ -7,7 +7,7 @@ import java.util.List;
 
 public class PermutationOfString {
     
-    private static final String inputStr = "ABCDEFGHIJ";
+    private static final String inputStr = "ABC";
 
     public static void main(String[] args) {
 

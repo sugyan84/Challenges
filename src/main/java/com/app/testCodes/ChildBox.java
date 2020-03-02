@@ -2,7 +2,7 @@ package com.app.testCodes;
 
 public class ChildBox extends BaseBox {
     
-    int y;
+    int childInt = 10;
 
     public ChildBox() {
         //super();
@@ -10,15 +10,4 @@ public class ChildBox extends BaseBox {
         x++;
     }
 
-    public ChildBox(final int y) {
-        this.y = y;
-    }
-
-    public int getY() {
-        return y;
-    }
-
-    public void setY(final int y) {
-        this.y = y;
-    }
 }

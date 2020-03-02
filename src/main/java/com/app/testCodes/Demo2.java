@@ -9,17 +9,17 @@ public class Demo2 {
     private static String getValue() {
         String val = null;
         try {
-            
-            if(val==null){
+
+            if (val == null) {
                 return "Null Hai";
             }
-        }catch (Exception e){
+        } catch (Exception e) {
             System.out.println("Exception block");
-            
-        }finally {
+
+        } finally {
             System.out.println("Finally block");
         }
-        
+
         return val;
     }
 }
