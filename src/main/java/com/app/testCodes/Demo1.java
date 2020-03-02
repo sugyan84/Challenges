@@ -9,9 +9,6 @@ public class Demo1 {
         int sizeOfArray = 3;
         int num = 4;
 
-        new Demo1().customeMethod();
-        System.out.println(num % sizeOfArray);
-
     }
 
     public void customeMethod() {

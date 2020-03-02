@@ -7,7 +7,7 @@ public class Demo {
 
     public static void main(String[] args) {
 
-        System.out.println(base62Encoder(678909));
+        System.out.println(base62Encoder(2480));
     }
 
     private static String base62Encoder(int deci) {
